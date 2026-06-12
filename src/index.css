@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply selection:bg-spotify-green selection:text-black;
+}
+
+body {
+  @apply m-0 p-0 bg-spotify-black text-spotify-text font-inter antialiased;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-spotify-black;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-spotify-lightDark rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-spotify-textSubdued;
+}
+
+/* Hide scrollbar for clean UI but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Spotify green glow effect */
+.spotify-glow {
+  box-shadow: 0 0 30px rgba(29, 185, 84, 0.3);
+}
+
+/* Lyric text animation */
+.lyric-text {
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
