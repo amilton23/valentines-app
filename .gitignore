@@ -1,0 +1,64 @@
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+
+# Environment variables (Never commit secrets!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Testing
+coverage/
+*.lcov
+.nyc_output/
+
+# Miscellaneous
+*.zip
+*.tar.gz
+*.rar
+
+# Optional: Prevent committing large raw assets to the repo. 
+# If you add photos to public/assets/, consider compressing them first 
+# or using the Creator Studio's built-in compression instead.
+# public/assets/*.jpg
+# public/assets/*.png
+# public/assets/*.webp
+# !public/assets/.gitkeep
+# !public/assets/README.md
